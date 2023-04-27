@@ -104,4 +104,9 @@ app.post('/login', async(req,res)=>{
     }
 })
 
+//Testing
+app.get('/test', (req,res) => {
+    res.json("Test Working :) Backend is running...!")
+})
+
 app.listen(PORT, ()=>console.log(`Server running on PORT ${PORT}`))
