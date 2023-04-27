@@ -22,7 +22,7 @@ const Modal = ({mode, setShowModal,task, getData}) => {
   const postData = async(e)=>{
     e.preventDefault();
     try{
-      const response = await fetch(`${process.env.REACT_APP_SERVERURL}`,{
+      const response = await fetch(`${process.env.REACT_APP_SERVERURL}/todos`,{
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
