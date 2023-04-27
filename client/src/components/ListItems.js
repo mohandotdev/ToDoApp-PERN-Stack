@@ -9,7 +9,7 @@ const ListItems = ({task, getData}) => {
   const deleteData = async(e)=>{
     e.preventDefault();
     try{
-      const response = await fetch(`${process.env.REACT_APP_SERVERURL}/${task.id}`,{
+      const response = await fetch(`${process.env.REACT_APP_SERVERURL}/todos/${task.id}`,{
         method: 'DELETE'
       })
       if(response.status ===  200){
