@@ -105,7 +105,7 @@ app.post('/login', async(req,res)=>{
 })
 
 //Testing
-app.get('/test', (req,res) => {
+app.get('/', (req,res) => {
     res.json("Test Working :) Backend is running...!")
 })
 
